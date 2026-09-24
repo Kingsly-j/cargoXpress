@@ -46,7 +46,7 @@ type AdminAccount = {
 
 const ADMIN_SESSION_KEY = "shipwave-logistics-admin-session";
 const ADMIN_ACCOUNTS_KEY = "shipwave-logistics-admin-accounts";
-const SUPER_ADMIN_EMAIL = "cargoxpress@gmail.com";
+const SUPER_ADMIN_EMAIL = "cargoxpress83@gmail.com";
 
 
 const superAdminAccount: AdminAccount = {

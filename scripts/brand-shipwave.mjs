@@ -23,6 +23,7 @@ for(const file of [...await files('src'),...await files('public/site'),'README.m
     .replaceAll('/shipwave-mark.png','/cargoxpress-mark.png')
     .replaceAll('support@shipwave.com','cargoxpress@gmail.com')
     .replaceAll('contact@iwebbtech.com','cargoxpress@gmail.com')
+    .replaceAll('cargoxpress@gmail.com','cargoxpress83@gmail.com')
     .replaceAll('17749300000','17064521895')
     .replaceAll('+1 (774) 930-0000','+1 (706) 452-1895')
     .replaceAll('SW-','CX-')

@@ -1,2 +1,2 @@
 // Matches the browser-local account architecture of the source project.
-export const bootstrapPasswordHash = "c7a0613dbd20997952f5df83dcfb26bfbc62ce3ee5acaa9cec22d6f980ae11a2";
+export const bootstrapPasswordHash = "11ab8452dbe0f6b1fde5b2c624af84ef171cd2f9eba099988a872e710102eb58";

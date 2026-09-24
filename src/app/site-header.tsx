@@ -8,7 +8,7 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   return <header className="revolve-header">
-    <div className="revolve-top"><span>Welcome to Cargo Xpress</span><div className="revolve-contact"><a href="tel:+17064521895">+1 (706) 452-1895</a><a href="mailto:cargoxpress@gmail.com">cargoxpress@gmail.com</a><span>Mon - Fri: 09:00 - 05:00</span></div></div>
+    <div className="revolve-top"><span>Welcome to Cargo Xpress</span><div className="revolve-contact"><a href="tel:+17064521895">+1 (706) 452-1895</a><a href="mailto:cargoxpress83@gmail.com">cargoxpress83@gmail.com</a><span>Mon - Fri: 09:00 - 05:00</span></div></div>
     <div className="revolve-nav">
       <Link className="revolve-logo" href="/" aria-label="Cargo Xpress home">
         {/* eslint-disable-next-line @next/next/no-img-element */}

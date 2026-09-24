@@ -3,13 +3,13 @@ import path from 'node:path';
 import { randomBytes, createHash } from 'node:crypto';
 
 const source = path.resolve('../jmlogisticts');
-const adapt = text => text.replaceAll('Bluecrest Logistics','Revolve Courier').replaceAll('Bluecrest','Revolve').replaceAll('bluecrest-logistics','shipwave-logistics').replaceAll('bluecrest-verification','shipwave-verification').replaceAll('support@bluecrestshipping.com','support@shipwave.com').replaceAll('contact@iwebbtech.com','support@shipwave.com').replaceAll('19152019157','17749300000').replaceAll('+1 (915) 201-9157','+1 (774) 930-0000').replaceAll('BC-','SW-');
+const adapt = text => text.replaceAll('Bluecrest Logistics','Revolve Courier').replaceAll('Bluecrest','Revolve').replaceAll('bluecrest-logistics','cargoxpress-logistics').replaceAll('bluecrest-verification','cargoxpress-verification').replaceAll('support@bluecrestshipping.com','cargoxpress83@gmail.com').replaceAll('contact@iwebbtech.com','cargoxpress83@gmail.com').replaceAll('19152019157','17064521895').replaceAll('+1 (915) 201-9157','+1 (706) 452-1895').replaceAll('BC-','CX-');
 const modules = ['app/admin/page.tsx','app/admin/shipment-details-editor.tsx','app/admin/shipment-note-editor.tsx','app/track/page.tsx','app/track/shipment-result.tsx','app/track/shipment-route.tsx','app/trackingresult/page.tsx','app/admin-access.tsx','app/language-provider.tsx','app/floating-tools.tsx','lib/shipments.ts','lib/shipment-route.ts','lib/shipment-progress.ts','lib/whatsapp.ts','lib/languages.ts','lib/italian-translations.ts','lib/international-translations.ts','utils/firebase/client.ts','utils/supabase/client.ts'];
 for (const file of modules) {
   const target = path.join('src',file);
   await mkdir(path.dirname(target),{recursive:true});
   let text = adapt(await readFile(path.join(source,file),'utf8'));
-  if(file === 'app/admin/page.tsx') text = text.replace('`shipments/${trackingCode}', '`shipwave/shipments/${trackingCode}');
+  if(file === 'app/admin/page.tsx') text = text.replace('`shipments/${trackingCode}', '`cargoxpress/shipments/${trackingCode}');
   await writeFile(target,text);
 }
 let css = await readFile(path.join(source,'app/globals.css'),'utf8');
@@ -31,7 +31,7 @@ NEXT_PUBLIC_SUPABASE_URL:sourceEnv.NEXT_PUBLIC_SUPABASE_URL,
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:sourceEnv.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
 NEXT_PUBLIC_SUPABASE_SHIPMENT_PHOTOS_BUCKET:sourceEnv.NEXT_PUBLIC_SUPABASE_SHIPMENT_PHOTOS_BUCKET || 'blue',
 S3_BUCKET_NAME:sourceEnv.S3_BUCKET_NAME || 'blue',
-SHIPWAVE_SUPER_ADMIN_EMAIL:'support@shipwave.com',
+SHIPWAVE_SUPER_ADMIN_EMAIL:'cargoxpress83@gmail.com',
 SHIPWAVE_SUPER_ADMIN_PASSWORD:password,
 };
 for(const key of ['NEXT_PUBLIC_SUPABASE_URL','NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY']) if(!config[key]) throw Error('Source configuration missing '+key);
@@ -42,4 +42,4 @@ for(const file of ['check-shipment-history.mjs','verify-cloud.mjs']) {
  let text=adapt(await readFile(path.join(source,'scripts',file),'utf8')).replaceAll("'lib/", "'src/lib/").replaceAll('public/testimonials/portrait-1.jpg','public/assets/images/resources/banner-one-review-1-1.jpg').replace('`shipments/SW-VERIFY-', '`shipwave/shipments/SW-VERIFY-');
  await writeFile(path.join('scripts',file),text);
 }
-console.log('Imported tracking, dashboard, localization, and storage modules. Firebase configured for Shipwave; shared storage configured without printing credentials.');
+console.log('Imported tracking, dashboard, localization, and storage modules. Firebase configured for Cargo Xpress; shared storage configured without printing credentials.');

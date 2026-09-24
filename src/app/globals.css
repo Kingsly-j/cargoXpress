@@ -264,7 +264,6 @@ html[dir=rtl] .text-left { text-align:right; }
 .cx-chat-launcher-icon { display:grid; width:24px; height:24px; place-items:center; border:2px solid #ffffffdc; border-radius:9px; font-size:0; }
 .cx-chat-launcher-icon:after { width:11px; height:8px; border:1.5px solid #fff; border-radius:3px; content:""; }
 .cx-chat-launcher-close { font-size:27px; line-height:1; }
-.cx-chat-unread { position:absolute; top:-2px; right:2px; width:12px; height:12px; border:2px solid #fff; border-radius:50%; background:#19c986; }
 .cx-chat-window { position:absolute; right:0; bottom:76px; display:flex; width:min(390px,calc(100vw - 32px)); height:min(650px,calc(100dvh - 120px)); min-height:430px; flex-direction:column; overflow:hidden; border:1px solid #e6ebf2; border-radius:22px; background:#fff; box-shadow:0 25px 80px #0c254b35; animation:cx-chat-in .2s ease-out; }
 .cx-chat-header { display:flex; align-items:center; gap:12px; padding:17px 18px; background:linear-gradient(120deg,#082759,#1450a9); color:#fff; }
 .cx-chat-avatar { display:grid; width:42px; height:42px; flex:0 0 auto; place-items:center; border:1px solid #ffffff35; border-radius:14px; background:#ffffff1c; font-size:13px; font-weight:700; letter-spacing:.06em; }

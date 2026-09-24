@@ -101,7 +101,7 @@ export default function LiveChat() {
       </form>
     </section> : null}
     <button type="button" className="cx-chat-launcher" aria-expanded={open} onClick={() => setOpen(value => !value)} aria-label={open ? "Close live chat" : "Open live chat"}>
-      {open ? <span className="cx-chat-launcher-close">×</span> : <><span className="cx-chat-launcher-icon" aria-hidden="true">▰</span><span>Chat with us</span>{messages.some(message => message.sender === "admin") ? <i className="cx-chat-unread" aria-label="New reply" /> : null}</>}
+      {open ? <span className="cx-chat-launcher-close">×</span> : <><span className="cx-chat-launcher-icon" aria-hidden="true">▰</span><span>Chat with us</span></>}
     </button>
   </div>;
 }

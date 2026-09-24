@@ -1,0 +1,112 @@
+/*--------------------------------------------------------------
+# Page Header
+--------------------------------------------------------------*/
+.page-header {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: var(--tanspot-black);
+    z-index: 1;
+}
+
+.page-header__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .10;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.page-header__inner {
+    position: relative;
+    display: block;
+    padding: 172px 0 172px;
+    z-index: 15;
+}
+
+.page-header__img-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+
+.page-header__img-1 img {
+    width: auto;
+}
+
+.page-header__shape-1 {
+    position: absolute;
+    top: 0px;
+    right: 393px;
+    z-index: -1;
+}
+
+.page-header__shape-1 img {
+    width: auto;
+}
+
+.page-header__inner h3 {
+    font-size: 60px;
+    color: var(--tanspot-white);
+    line-height: 1em;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.thm-breadcrumb__inner {
+    position: relative;
+    display: block;
+}
+
+.thm-breadcrumb {
+    position: relative;
+    display: block;
+}
+
+.thm-breadcrumb li {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--tanspot-white);
+    font-family: var(--tanspot-font-two);
+    text-transform: capitalize;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.thm-breadcrumb li+li {
+    margin-left: 5px;
+}
+
+.thm-breadcrumb li a {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--tanspot-white);
+    font-family: var(--tanspot-font-two);
+    text-transform: capitalize;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.thm-breadcrumb li:hover a {
+    color: var(--tanspot-base);
+    opacity: 1;
+}
+
+.thm-breadcrumb li span {
+    font-size: 16px;
+    color: var(--tanspot-base);
+    font-weight: 700;
+    position: relative;
+    top: 1px;
+}

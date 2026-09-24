@@ -1,0 +1,196 @@
+/*--------------------------------------------------------------
+# Work Steps One
+--------------------------------------------------------------*/
+.process-one {
+    position: relative;
+    display: block;
+    padding: 120px 0 90px;
+    background-color: var(--tanspot-primary);
+    counter-reset: count;
+    z-index: 1;
+}
+
+.process-one__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.03;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.process-one__inner {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.process-one__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 15px;
+}
+
+.process-one__list li {
+    position: relative;
+    display: block;
+    text-align: center;
+    flex: 0 0 25%;
+    padding: 0 15px;
+    margin-bottom: 21px;
+}
+
+.process-one__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    background-color: rgba(var(--tanspot-base-rgb), .60);
+    border-radius: 50%;
+    margin: 0 auto 0;
+    transition: all 500ms ease;
+    z-index: 1;
+}
+
+.process-one__list li:hover .process-one__icon {
+    background-color: rgba(var(--tanspot-black-rgb), .60);
+}
+
+.process-one__icon:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: var(--tanspot-base);
+    border-radius: 50%;
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+.process-one__list li:hover .process-one__icon:before {
+    background-color: var(--tanspot-black);
+}
+
+.process-one__icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: var(--tanspot-white);
+    transition: all 500ms linear;
+    transition-delay: 0.1s;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.process-one__list li:hover .process-one__icon span {
+    transform: scale(0.9);
+    color: var(--tanspot-white);
+}
+
+.process-one__count {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+}
+
+.process-one__count:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 600;
+    color: var(--tanspot-white);
+    background-color: var(--tanspot-black);
+    border: 3px solid rgba(var(--tanspot-white-rgb), .50);
+    border-radius: 50%;
+    counter-increment: count;
+    content: "0"counter(count);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.process-one__inner li:hover .process-one__count:before {
+    color: var(--tanspot-base);
+    background-color: var(--tanspot-white);
+    border: 3px solid rgba(var(--tanspot-black-rgb), .50);
+}
+
+.process-one__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.process-one__title a {
+    color: var(--tanspot-black);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.process-one__title a:hover {
+    color: var(--tanspot-base);
+}
+
+.process-one__text {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.process-one__shpae-1 {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    right: -30%;
+    background-color: var(--tanspot-base);
+    height: 4px;
+    transition: all 500ms ease;
+}
+
+.process-one__inner li:hover .process-one__shpae-1 {
+    background-color: var(--tanspot-black);
+}
+
+.process-one__shpae-1:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--tanspot-base);
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    transition: all 500ms ease;
+}
+
+.process-one__inner li:hover .process-one__shpae-1:before {
+    background-color: var(--tanspot-black);
+}
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

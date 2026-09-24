@@ -1,0 +1,56 @@
+@theme {
+  --color-blue-50:#f1f0ff;
+  --color-blue-100:#e2dfff;
+  --color-blue-200:#cbc5ff;
+  --color-blue-300:#aaa0ff;
+  --color-blue-400:#8675ff;
+  --color-blue-500:#6550ff;
+  --color-blue-600:#4a3aff;
+  --color-blue-700:#3929d8;
+  --color-blue-800:#3024aa;
+  --color-blue-900:#203b50;
+  --color-blue-950:#062f3a;
+}
+body { font-family:"Poppins",Arial,sans-serif; background:#f5f6fa; color:#062f3a; }
+h1,h2,h3,h4 {font-family:"Rubik","Poppins",Arial,sans-serif;}
+.revolve-header {background:white;position:relative;z-index:45;}
+.revolve-top {display:flex;justify-content:space-between;background:#062f3a;color:#fff;padding:10px max(24px,calc((100vw - 1320px)/2));font-size:12px;}
+.revolve-nav {max-width:1370px;margin:auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.revolve-logo {background:#06122b;padding:4px 8px;border-radius:5px;}
+.revolve-logo img {width:150px;height:auto;max-height:none;object-fit:contain;}
+.revolve-contact {display:flex;align-items:center;gap:24px;}
+.revolve-contact a {color:#fff;}
+.revolve-contact a:hover {color:#ffb000;}
+img[src="/cargoxpress-logo.png"] {background:#06122b;padding:4px;border-radius:5px;}
+.revolve-nav nav {display:flex;align-items:center;gap:36px;font-size:15px;font-weight:500;}
+.revolve-nav a:hover {color:#4a3aff;}
+.revolve-nav .revolve-cta {background:#4a3aff;color:white;padding:14px 18px;border-radius:6px;display:flex;align-items:center;gap:24px;}
+.revolve-cta span {display:grid;place-items:center;background:white;color:#4a3aff;width:30px;height:30px;border-radius:4px;font-size:22px;}
+.revolve-menu {display:none;}
+.tracking-page-header {max-width:none;margin:-36px -24px 30px;padding:50px max(24px,calc((100vw - 1320px)/2));background:#062f3a url('/assets/images/shapes/banner-ong-pattern.png') center/cover;color:white;}
+.tracking-page-header h1 {font-size:clamp(27px,3vw,40px);font-weight:600;}
+.tracking-page-header p {color:#d5dce1;}
+.tracking-page-header h1 i {color:#a69fff;}
+.tracking-home-link {background:#4a3aff;}
+.tracking-result,.tracking-search,.tracking-search-message {max-width:1320px;}
+.tracking-surface {border-radius:10px;border:1px solid #e5e7eb;box-shadow:0 8px 28px #062f3a08;}
+.tracking-summary-header {background:#062f3a;}
+.tracking-section-title {color:#062f3a;}
+.admin-dashboard [data-dashboard-panel="overview"] {background:#062f3a url('/assets/images/shapes/banner-ong-pattern.png') center/cover;border-radius:12px;}
+.admin-dashboard [data-dashboard-panel="overview"] h1 {font-size:clamp(30px,3.5vw,46px);line-height:1.15;}
+.admin-dashboard [data-dashboard-panel="create"],.admin-dashboard [data-dashboard-panel="details"],.admin-dashboard [data-dashboard-panel="admins"] {border-radius:12px;}
+.admin-dashboard input,.admin-dashboard select,.admin-dashboard textarea {border-radius:7px;}
+@media(max-width:760px) {
+ .revolve-top {font-size:10px;padding:9px 16px;gap:8px;flex-wrap:wrap;}
+ .revolve-contact {gap:10px;flex-wrap:wrap;}
+ .revolve-nav {padding:18px 16px;flex-wrap:wrap;}
+ .revolve-logo img {width:125px;}
+ .revolve-menu {display:block;color:#4a3aff;font-size:24px;padding:8px;}
+ .revolve-nav nav {display:none;flex-basis:100%;flex-direction:column;align-items:stretch;gap:0;}
+ .revolve-nav nav.is-open {display:flex;}
+ .revolve-nav nav>a {padding:14px;border-bottom:1px solid #eee;}
+ .revolve-nav .revolve-cta {justify-content:space-between;margin-top:10px;}
+ .tracking-page-header {margin:-18px -12px 25px;padding:32px 18px;}
+ .tracking-home-link {font-size:12px;padding:10px;}
+}
+@media print {.revolve-header {display:none!important;}}

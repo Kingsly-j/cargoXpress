@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "/",
+    "/about",
+    "/services",
+    "/international-transport",
+    "/track-transport",
+    "/personal-delivery",
+    "/ocean-transport",
+    "/warehouse-facility",
+    "/emergency-transport",
+    "/contact",
+    "/track",
+    "/projects",
+    "/project-details",
+    "/testimonials",
+    "/team-details",
+    "/faq",
+    "/blog"
+  ],
+  "assets": 188,
+  "failures": [
+    {
+      "url": "https://iwebbtech.com/testimonials",
+      "error": "404"
+    },
+    {
+      "url": "https://iwebbtech.com/project-details",
+      "error": "404"
+    },
+    {
+      "url": "https://iwebbtech.com/team-details",
+      "error": "404"
+    }
+  ]
+}

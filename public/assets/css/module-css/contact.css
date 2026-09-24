@@ -1,0 +1,554 @@
+/*--------------------------------------------------------------
+# Contact One
+--------------------------------------------------------------*/
+.contact-one {
+    position: relative;
+    display: block;
+    background-color: var(--tanspot-base);
+    padding: 100px 0 100px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contact-one__shape-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .10;
+    z-index: -1;
+}
+
+.contact-one__bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    width: calc((100% - -755px) / 2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 68% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.contact-one__bg-img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(var(--tanspot-black-rgb), .30);
+}
+
+.contact-one__left {
+    position: relative;
+    display: block;
+    min-height: 640px;
+    z-index: 2;
+}
+
+.contact-one__video-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.contact-one__video-icon {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--tanspot-white);
+    background-color: var(--tanspot-base);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.contact-one__video-icon:hover {
+    background-color: var(--tanspot-white);
+    color: var(--tanspot-base);
+}
+
+.contact-one__video-link .ripple,
+.contact-one__video-icon .ripple:before,
+.contact-one__video-icon .ripple:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -ms-box-shadow: 0 0 0 0 rgba(var(--tanspot-white-rgb), 0.6);
+    -o-box-shadow: 0 0 0 0 rgba(var(--tanspot-white-rgb), 0.6);
+    -webkit-box-shadow: 0 0 0 0 rgba(var(--tanspot-white-rgb), 0.6);
+    box-shadow: 0 0 0 0 rgba(var(--tanspot-white-rgb), 0.6);
+    -webkit-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+}
+
+.contact-one__video-icon .ripple:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+    content: "";
+    position: absolute;
+}
+
+.contact-one__video-icon .ripple:after {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    content: "";
+    position: absolute;
+}
+
+.contact-one__right {
+    position: relative;
+    display: block;
+    margin-left: 80px;
+    z-index: 1;
+}
+
+.contact-one__content {
+    position: relative;
+    display: block;
+    padding: 47px 60px 50px;
+    background: var(--tanspot-black);
+    box-shadow: 0px 0px 60px 0px rgba(4, 23, 26, 0.06);
+    border-radius: 20px;
+}
+
+.contact-one__tagline {
+    font-size: 18px;
+    color: var(--tanspot-base);
+    font-weight: 500;
+    line-height: 1em;
+    font-family: var(--tanspot-font-two);
+    text-transform: uppercase;
+}
+
+.contact-one__title {
+    font-size: 35px;
+    color: var(--tanspot-white);
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-bottom: 33px;
+}
+
+.contact-one__form {
+    position: relative;
+    display: block;
+}
+
+.contact-one__content-box {
+    position: relative;
+    display: block;
+}
+
+.contact-one__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-one__input-box input[type="text"],
+.contact-one__input-box input[type="email"] {
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(var(--tanspot-white-rgb), .01);
+    border: 1px solid rgba(var(--tanspot-white-rgb), .03);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(var(--tanspot-white-rgb), .60);
+    border-radius: 10px;
+    font-family: var(--tanspot-font);
+}
+
+.contact-one__progress {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-top: 6px;
+}
+
+.contact-one__progress-single {
+    position: relative;
+    display: block;
+}
+
+.contact-one__progress-title {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--tanspot-white);
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.contact-one__progress .bar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(var(--tanspot-white-rgb), .15);
+    border-radius: 5px;
+    border: 0;
+}
+
+.contact-one__progress .bar-inner {
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background-color: var(--tanspot-base);
+    border-radius: 5px;
+    -webkit-transition: all 1500ms ease;
+    -ms-transition: all 1500ms ease;
+    -o-transition: all 1500ms ease;
+    -moz-transition: all 1500ms ease;
+    transition: all 1500ms ease;
+}
+
+.contact-one__progress .count-text {
+    position: absolute;
+    right: -3px;
+    bottom: -4px;
+    opacity: 0;
+    border-radius: 50%;
+    background-color: var(--tanspot-base);
+    border: 3px solid var(--tanspot-white);
+    width: 18px;
+    height: 18px;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.contact-one__progress .bar-inner.counted .count-text {
+    opacity: 1;
+}
+
+.contact-one__content-bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-one__content-bottom .thm-btn {
+    border: none;
+}
+
+
+.contact-one__content-bottom .thm-btn::before,
+.contact-one__content-bottom .thm-btn::after {
+    background-color: var(--tanspot-white);
+}
+
+.contact-one__content-bottom .thm-btn:hover {
+    color: var(--tanspot-base);
+}
+
+.contact-one__content-bottom .thm-btn:hover>span {
+    background-color: var(--tanspot-base);
+    color: var(--tanspot-white);
+}
+
+.contact-one__content-bottom-text-box {
+    position: relative;
+    display: block;
+}
+
+.contact-one__count-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contact-one__count {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contact-one__count h3 {
+    font-size: 14px;
+    color: var(--tanspot-white);
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.contact-one__count span {
+    font-size: 14px;
+    color: var(--tanspot-white);
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.contact-one__count-box p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--tanspot-white);
+    margin-left: 4px;
+}
+
+.contact-one__ratting {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.contact-one__ratting span {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    color: var(--tanspot-base);
+}
+
+.contact-one__ratting span+span {
+    margin-left: 3px;
+}
+
+/*--------------------------------------------------------------
+# Contact Info
+--------------------------------------------------------------*/
+.contact-info {
+    position: relative;
+    display: block;
+    padding: 120px 0 90px;
+    z-index: 1;
+}
+
+.contact-info__single {
+    position: relative;
+    display: block;
+    border-radius: var(--tanspot-bdr-radius);
+    background-color: var(--tanspot-primary);
+    text-align: center;
+    padding: 40px 40px 41px;
+    margin-bottom: 30px;
+}
+
+.contact-info__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: var(--tanspot-white);
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.contact-info__icon:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    border-radius: 50%;
+    background-color: var(--tanspot-black);
+    transform: scale(0);
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.52);
+    z-index: -1;
+}
+
+.contact-info__single:hover .contact-info__icon:before {
+    transform: scaleX(1);
+}
+
+.contact-info__icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 32px;
+    color: var(--tanspot-black);
+    transition: all 500ms linear;
+    transition-delay: 0.1s;
+    transform: scale(1);
+}
+
+.contact-info__single:hover .contact-info__icon span {
+    transform: scale(0.9);
+    color: var(--tanspot-white);
+}
+
+
+.contact-info__single p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-info__single h5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--tanspot-black);
+    font-family: var(--tanspot-font);
+}
+
+.contact-info__single h5 a {
+    color: var(--tanspot-black);
+}
+
+.contact-info__single h5 a:hover {
+    color: var(--tanspot-base)
+}
+
+
+/*--------------------------------------------------------------
+# Contact Page
+--------------------------------------------------------------*/
+.contact-page {
+    position: relative;
+    display: block;
+    padding: 0 0 120px;
+    z-index: 1;
+}
+
+.contact-page__inner {
+    position: relative;
+    display: block;
+    background-color: var(--tanspot-black);
+    border-radius: 20px;
+    padding: 60px 0 60px;
+}
+
+.contact-page__left {
+    position: relative;
+    display: block;
+    margin-left: 60px;
+    margin-right: 10px;
+}
+
+.google-map__one {
+    position: relative;
+    display: block;
+    border: none;
+    height: 523px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contact-page__right {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.contact-page__form-title {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.2em;
+    color: var(--tanspot-white);
+    margin-bottom: 26px;
+}
+
+.contact-page__form {
+    position: relative;
+    display: block;
+}
+
+.contact-page__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.contact-page__input-box input[type="text"],
+.contact-page__input-box input[type="email"],
+.contact-page__input-box input[type="number"] {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(var(--tanspot-white-rgb), 0.03);
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(var(--tanspot-white-rgb), .70);
+    display: block;
+    border-radius: var(--tanspot-bdr-radius);
+}
+
+.contact-page__input-box textarea {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(var(--tanspot-white-rgb), .70);
+    height: 175px;
+    width: 100%;
+    background-color: rgba(var(--tanspot-white-rgb), 0.03);
+    border: none;
+    padding: 15px 20px 30px;
+    border-radius: var(--tanspot-bdr-radius);
+    outline: none;
+    position: relative;
+    display: block;
+}
+
+.contact-page__input-box.text-message-box {
+    height: 175px;
+}
+
+
+.contact-page__btn-box {
+    position: relative;
+    display: block;
+}
+
+.contact-page__btn-box .thm-btn {
+    border: none;
+}
+
+.contact-page__btn-box .thm-btn:hover {
+    color: var(--tanspot-base);
+}
+
+.contact-page__btn-box .thm-btn::before,
+.contact-page__btn-box .thm-btn::after {
+    background-color: var(--tanspot-white);
+}
+
+.contact-page__btn-box .thm-btn:hover>span {
+    background-color: var(--tanspot-base);
+    color: var(--tanspot-white);
+}

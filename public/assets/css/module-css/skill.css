@@ -1,0 +1,138 @@
+/*--------------------------------------------------------------
+# Skill One
+--------------------------------------------------------------*/
+.skill-one {
+    position: relative;
+    display: block;
+    padding: 120px 0 120px;
+    background-color: var(--tanspot-primary);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.skill-one__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc((100% - 0px) / 2);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.skill-one__left {
+    position: relative;
+    display: block;
+}
+
+.skill-one__left .section-title {
+    margin-bottom: 21px;
+}
+
+.skill-one__progress-box {
+    position: relative;
+    display: block;
+    margin-top: 24px;
+    margin-right: 60px;
+}
+
+.skill-one__progress-box .progress-box {
+    position: relative;
+    display: block;
+}
+
+.skill-one__progress-box .progress-box+.progress-box {
+    margin-top: 14px;
+}
+
+.skill-one__progress-box .progress-box .bar-title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-family: var(--tanspot-font-two);
+    color: var(--tanspot-black);
+}
+
+.skill-one__progress-box .progress-box .bar {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background-color: rgba(var(--tanspot-black-rgb), .10);
+    border-radius: 4px;
+}
+
+.skill-one__progress-box .progress-box .bar-inner {
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 7px;
+    background: var(--tanspot-base);
+    border-radius: 4px;
+    -webkit-transition: all 1500ms ease;
+    transition: all 1500ms ease;
+}
+
+.skill-one__progress-box .progress-box .count-box {
+    position: absolute;
+    right: 0px;
+    margin-right: -35px;
+    bottom: 18px;
+    width: 40px;
+    height: 22px;
+    background: var(--tanspot-base);
+    color: #ffffff;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 0;
+    opacity: 0;
+    font-family: var(--tanspot-font);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.skill-one__progress-box .progress-box .counted .count-box {
+    opacity: 1;
+}
+
+.skill-one__progress-box .progress-box .count-box:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: -5px;
+    border: 5px solid transparent;
+    border-top: 5px solid var(--tanspot-base);
+    border-left: 5px solid var(--tanspot-base);
+}
+
+.skill-one__btn-box {
+    position: relative;
+    display: block;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

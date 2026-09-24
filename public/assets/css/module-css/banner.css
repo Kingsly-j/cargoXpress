@@ -1,0 +1,546 @@
+/*==============================================
+    Banner One
+===============================================*/
+.banner-one {
+    position: relative;
+    display: block;
+    background-color: var(--tanspot-black);
+    padding: 182px 0 180px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.banner-one__pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .02;
+    z-index: -1;
+}
+
+.banner-one__line-shpae1 {
+    position: absolute;
+    top: -300px;
+    bottom: -300px;
+    right: -5px;
+    width: 250px;
+    background-color: var(--tanspot-base);
+    transform: rotate(34deg);
+    z-index: -1;
+}
+
+.banner-one__line-shpae2 {
+    position: absolute;
+    top: 310px;
+    bottom: -150px;
+    right: 452px;
+    width: 100px;
+    background-color: var(--tanspot-base);
+    transform: rotate(34deg);
+    z-index: -1;
+}
+
+.banner-one__inner {
+    position: relative;
+    display: block;
+}
+
+.banner-one__content-box {
+    position: relative;
+    display: block;
+}
+
+.banner-one__sub-title {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    color: var(--tanspot-base);
+    font-weight: 600;
+    line-height: 1em;
+    font-family: var(--tanspot-font-two);
+    text-transform: uppercase;
+}
+
+.banner-one__title {
+    font-size: 80px;
+    color: var(--tanspot-white);
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin-top: 26px;
+    margin-bottom: 21px;
+}
+
+.banner-one__title span {
+    color: var(--tanspot-base);
+}
+
+.banner-one__text {
+    font-size: 18px;
+    color: rgba(var(--tanspot-white-rgb), .70);
+    font-weight: 500;
+}
+
+.banner-one__btn-and-review-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 53px;
+}
+
+.banner-one__btn-box {
+    position: relative;
+    display: block;
+}
+
+.banner-one__btn-box .thm-btn::before,
+.banner-one__btn-box .thm-btn::after {
+    background-color: var(--tanspot-white);
+}
+
+.banner-one__btn-box .thm-btn:hover {
+    color: var(--tanspot-base);
+}
+
+.banner-one__btn-box .thm-btn:hover>span {
+    background-color: var(--tanspot-base);
+    color: var(--tanspot-white);
+}
+
+.banner-one__review-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.banner-one__review-box ul {
+    position: relative;
+    display: block;
+}
+
+.banner-one__review-box ul li {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.banner-one__review-box ul li+li {
+    margin-left: -20px;
+}
+
+.banner-one__review-box ul li .img-box {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--tanspot-base);
+}
+
+.banner-one__review-box ul li .img-box img {
+    width: 100%;
+}
+
+.banner-one__review-box .text-box {
+    position: relative;
+    display: block;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.banner-one__review-box .text-box h2 {
+    color: var(--tanspot-white);
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.banner-one__review-box .text-box p {
+    color: var(--tanspot-white);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.banner-one__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.banner-one__img img {
+    width: auto;
+    animation: leftRight 4s ease-in-out infinite;
+}
+
+.banner-one__shape-3 {
+    position: absolute;
+    top: 0;
+    right: 125px;
+}
+
+.banner-one__shape-3 img {
+    width: auto;
+}
+
+/*==============================================
+    Banner Two
+===============================================*/
+.banner-two {
+    position: relative;
+    display: block;
+    background-color: var(--tanspot-black);
+    padding: 135px 0 135px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.banner-two__pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .02;
+    z-index: -1;
+}
+
+.banner-two__map-1 {
+    position: absolute;
+    bottom: 130px;
+    left: 100px;
+    opacity: .05;
+    z-index: -1;
+}
+
+.banner-two__map-1 img {
+    width: auto;
+}
+
+.banner-two__left {
+    position: relative;
+    display: block;
+    margin-right: 50px;
+}
+
+.banner-two__sub-title {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    color: var(--tanspot-base);
+    font-weight: 600;
+    line-height: 1em;
+    font-family: var(--tanspot-font-two);
+    text-transform: uppercase;
+}
+
+.banner-two__title {
+    position: relative;
+    font-size: 65px;
+    color: var(--tanspot-white);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin-top: 22px;
+    margin-bottom: 19px;
+}
+
+.banner-two__title span {
+    color: var(--tanspot-base);
+}
+
+.banner-two__text {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    color: rgba(var(--tanspot-white-rgb), .70);
+    font-weight: 500;
+}
+
+
+.banner-two__tab-box {
+    position: relative;
+    display: block;
+    margin-top: 47px;
+}
+
+.banner-two__tab-box .tab-buttons {
+    position: relative;
+    display: block;
+}
+
+.banner-two__tab-box .tab-buttons .tab-btn {
+    position: relative;
+    display: inline-block;
+    background: var(--tanspot-white);
+    padding: 7px 20px 7px;
+    cursor: pointer;
+    border-radius: var(--tanspot-bdr-radius);
+    z-index: 1;
+}
+
+.banner-two__tab-box .tab-buttons .tab-btn:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0%;
+    content: "";
+    background: var(--tanspot-base);
+    border-radius: var(--tanspot-bdr-radius);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.banner-two__tab-box .tab-buttons .tab-btn.active-btn:before {
+    height: 100%;
+}
+
+.banner-two__tab-box .tab-buttons .tab-btn p {
+    color: var(--tanspot-black);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.banner-two__tab-box .tab-buttons .tab-btn.active-btn p {
+    color: var(--tanspot-white);
+}
+
+.banner-two__tab-box .tabs-content {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.banner-two__tab-box .tabs-content .tab {
+    position: relative;
+    display: none;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: all 900ms ease;
+    -moz-transition: all 900ms ease;
+    -ms-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+    transition: all 900ms ease;
+    z-index: 10;
+}
+
+.banner-two__tab-box .tabs-content .tab.active-tab {
+    display: block;
+    margin-top: 0px;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.banner-two__tab-form-box {
+    position: relative;
+    display: block;
+}
+
+.banner-two__tab-form {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+}
+
+.banner-two__tab-form-input-box {
+    position: relative;
+    display: block;
+}
+
+.banner-two__tab-form-input-box input[type="email"] {
+    color: var(--tanspot-white);
+    font-size: 16px;
+    font-weight: 600;
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--tanspot-base);
+    border-radius: var(--tanspot-bdr-radius);
+    padding-right: 80px;
+    padding-left: 20px;
+}
+
+.banner-two__tab-form-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--tanspot-white);
+    background-color: var(--tanspot-base);
+    border-radius: var(--tanspot-bdr-radius);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.banner-two__tab-form-btn span {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.banner-two__tab-form-btn:hover {
+    color: var(--tanspot-base);
+    background-color: var(--tanspot-white);
+}
+
+
+.banner-two__right {
+    position: relative;
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.banner-two__form-box {
+    position: relative;
+    display: block;
+    background: #042a35;
+    padding: 55px 40px 55px;
+    border-radius: var(--tanspot-bdr-radius);
+    z-index: 2;
+}
+
+.banner-two__form {
+    position: relative;
+    display: block;
+}
+
+.banner-two__form .input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.banner-two__form .input-box .icon {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+
+.banner-two__form .input-box .icon span::before {
+    position: relative;
+    display: inline-block;
+    color: rgba(var(--tanspot-white-rgb), .60);
+    font-size: 15px;
+}
+
+.banner-two__form .input-box input[type="text"],
+.banner-two__form .input-box input[type="email"] {
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(var(--tanspot-white-rgb), .01);
+    border: 1px solid rgba(var(--tanspot-white-rgb), .03);
+    padding-left: 20px;
+    padding-right: 40px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(var(--tanspot-white-rgb), .60);
+    border-radius: 10px;
+    font-family: var(--tanspot-font);
+}
+
+.banner-two__form .input-box .select-box {
+    width: 100%;
+}
+
+.banner-two__form .input-box .nice-select {
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(var(--tanspot-white-rgb), .01);
+    border: 1px solid rgba(var(--tanspot-white-rgb), .03);
+    padding-left: 20px;
+    padding-right: 40px;
+    outline: none;
+    font-size: 14px;
+    line-height: 55px;
+    font-weight: 400;
+    color: rgba(var(--tanspot-white-rgb), .60);
+    border-radius: 10px;
+    font-family: var(--tanspot-font);
+    float: none;
+}
+
+.banner-two__form .input-box .nice-select:after {
+    position: absolute;
+    top: 18px;
+    right: 23px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid rgba(var(--tanspot-white-rgb), .60);
+    border-right: 1px solid rgba(var(--tanspot-white-rgb), .60);
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.banner-two__form .input-box .nice-select .option {
+    color: var(--tanspot-white);
+}
+
+.banner-two__form .input-box textarea {
+    position: relative;
+    display: block;
+    background-color: rgba(var(--tanspot-white-rgb), .01);
+    border: 1px solid rgba(var(--tanspot-white-rgb), .03);
+    padding-left: 20px;
+    padding-right: 40px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(var(--tanspot-white-rgb), .60);
+    border-radius: 10px;
+    font-family: var(--tanspot-font);
+    width: 100%;
+    height: 140px;
+    padding-top: 11px;
+    outline: none;
+    resize: none;
+}
+
+.banner-two__form .input-box .icon.style2 {
+    top: 11%;
+    transform: translateY(0%);
+}
+
+.banner-two__form-btn {
+    position: relative;
+    display: block;
+}
+
+.banner-two__form-btn .thm-btn {
+    border: none;
+}
+
+/*==============================================
+    End
+===============================================*/

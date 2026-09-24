@@ -1,0 +1,23 @@
+img[src="/cargoxpress-logo.png"] {
+  display: block;
+  width: 180px;
+  height: auto;
+  max-height: none !important;
+  padding: 4px 7px;
+  border-radius: 7px;
+  background: #06122b;
+  object-fit: contain;
+}
+
+.footer-widget__logo img[src="/cargoxpress-logo.png"],
+.mobile-nav__content .logo-box img[src="/cargoxpress-logo.png"],
+.xs-sidebar-group .content-inner .logo img[src="/cargoxpress-logo.png"] {
+  width: 150px;
+}
+
+@media (max-width: 760px) {
+  img[src="/cargoxpress-logo.png"] { width: 142px; }
+  .footer-widget__logo img[src="/cargoxpress-logo.png"],
+  .mobile-nav__content .logo-box img[src="/cargoxpress-logo.png"],
+  .xs-sidebar-group .content-inner .logo img[src="/cargoxpress-logo.png"] { width: 126px; }
+}

@@ -22,7 +22,7 @@ function timeLabel(value: string) {
   return Number.isNaN(date.getTime()) ? "" : date.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
 }
 
-export default function LiveChat() {
+export default function LiveChat({ embedded = false }: { embedded?: boolean }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [chatId, setChatId] = useState("");
@@ -34,6 +34,13 @@ export default function LiveChat() {
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
   const endRef = useRef<HTMLDivElement>(null);
+
+  function toggleChat(nextOpen: boolean) {
+    setOpen(nextOpen);
+    if (embedded && window.parent !== window) {
+      window.parent.postMessage({ source: "cargoxpress-live-chat", open: nextOpen }, window.location.origin);
+    }
+  }
 
   useEffect(() => {
     const init = window.setTimeout(() => {
@@ -86,7 +93,7 @@ export default function LiveChat() {
       <header className="cx-chat-header">
         <div className="cx-chat-avatar" aria-hidden="true">CX</div>
         <div className="cx-chat-heading"><strong>Cargo Xpress support</strong><span><i className={online ? "is-online" : ""} />{online ? "Online now" : "We’ll reply as soon as we’re back"}</span></div>
-        <button type="button" className="cx-chat-close" aria-label="Close chat" onClick={() => setOpen(false)}>×</button>
+        <button type="button" className="cx-chat-close" aria-label="Close chat" onClick={() => toggleChat(false)}>×</button>
       </header>
       <div className="cx-chat-welcome"><span>SHIPMENT SUPPORT</span><h2>How can we help?</h2><p>Send us a message and our team will get back to you here.</p></div>
       <div className="cx-chat-messages" aria-live="polite">
@@ -100,7 +107,7 @@ export default function LiveChat() {
         <p className="cx-chat-privacy">Replies appear here when you return to this browser.</p>
       </form>
     </section> : null}
-    <button type="button" className="cx-chat-launcher" aria-expanded={open} onClick={() => setOpen(value => !value)} aria-label={open ? "Close live chat" : "Open live chat"}>
+    <button type="button" className="cx-chat-launcher" aria-expanded={open} onClick={() => toggleChat(!open)} aria-label={open ? "Close live chat" : "Open live chat"}>
       {open ? <span className="cx-chat-launcher-close">×</span> : <><span className="cx-chat-launcher-icon" aria-hidden="true">▰</span><span>Chat with us</span></>}
     </button>
   </div>;

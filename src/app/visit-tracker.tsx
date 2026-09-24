@@ -10,21 +10,25 @@ const SESSION_KEY = "cargoxpress-visitor-session";
 export default function VisitTracker() {
   const pathname = usePathname();
   useEffect(() => {
-    if (!pathname || pathname.startsWith("/admin")) return;
+    if (!pathname) return;
     const timer = window.setTimeout(() => {
+      const parameters = new URLSearchParams(location.search);
+      const parentPage = parameters.get("page");
+      const page = parentPage?.startsWith("/") ? parentPage.split("?")[0] : pathname;
+      if ((pathname === "/chat-embed" && !parentPage) || page.startsWith("/admin")) return;
       let sessionId = "";
       try {
         sessionId = sessionStorage.getItem(SESSION_KEY) || crypto.randomUUID();
         sessionStorage.setItem(SESSION_KEY, sessionId);
       } catch { sessionId = crypto.randomUUID(); }
-      let source = "Direct";
+      let source = parameters.get("source") || "Direct";
       try {
         const referrer = document.referrer ? new URL(document.referrer).hostname : "";
-        if (referrer && referrer !== location.hostname) source = referrer;
+        if (!parameters.has("source") && referrer && referrer !== location.hostname) source = referrer;
       } catch { /* A malformed referrer is treated as direct traffic. */ }
       void addDoc(collection(db, "siteVisits"), {
         sessionId,
-        page: pathname.slice(0, 300),
+        page: page.slice(0, 300),
         source: source.slice(0, 160),
         createdAt: new Date().toISOString(),
       }).catch(() => { /* Analytics must never interrupt page navigation. */ });

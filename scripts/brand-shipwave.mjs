@@ -1,6 +1,8 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
+const shareImage = 'https://raw.githubusercontent.com/Kingsly-j/cargoXpress/main/public/cargoxpress-social.png';
+
 async function files(dir) {
   const result=[];
   for(const item of await readdir(dir,{withFileTypes:true})) {
@@ -27,6 +29,13 @@ for(const file of [...await files('src'),...await files('public/site'),'README.m
     .replaceAll('shipwave/shipments','cargoxpress/shipments')
     .replaceAll('alt="" /></a>','alt="Cargo Xpress logo" /></a>')
     .replaceAll('aria-label="logo image"','aria-label="Cargo Xpress logo"');
+  if(file.includes(`${path.sep}site${path.sep}`) && !content.includes('property="og:image"')) {
+    const social = `\n    <meta property="og:type" content="website" />\n    <meta property="og:site_name" content="Cargo Xpress" />\n    <meta property="og:title" content="Cargo Xpress | Global Logistics &amp; Tracking" />\n    <meta property="og:description" content="Reliable worldwide air, sea, and road freight with live shipment tracking." />\n    <meta property="og:image" content="${shareImage}" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="Cargo Xpress global logistics — air, sea, and road shipping" />\n    <meta name="twitter:card" content="summary_large_image" />\n    <meta name="twitter:title" content="Cargo Xpress | Global Logistics &amp; Tracking" />\n    <meta name="twitter:description" content="Reliable worldwide air, sea, and road freight with live shipment tracking." />\n    <meta name="twitter:image" content="${shareImage}" />\n`;
+    content=content.replace('</head>',`${social}</head>`);
+  }
+  if(file.includes(`${path.sep}site${path.sep}`) && !content.includes('cargoxpress-brand.css')) {
+    content=content.replace('</head>','    <link rel="stylesheet" href="/cargoxpress-brand.css" />\n</head>');
+  }
   await writeFile(file,content);
 }
-console.log('Applied Cargo Xpress branding, contact details, and logo references across site pages and dashboard copy.');
+console.log('Applied Cargo Xpress branding, share-card metadata, logo styling, contact details, and logo references across site pages and dashboard copy.');

@@ -17,11 +17,11 @@ h1,h2,h3,h4 {font-family:"Rubik","Poppins",Arial,sans-serif;}
 .revolve-top {display:flex;justify-content:space-between;background:#062f3a;color:#fff;padding:10px max(24px,calc((100vw - 1320px)/2));font-size:12px;}
 .revolve-nav {max-width:1370px;margin:auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
 .revolve-logo {background:#06122b;padding:4px 8px;border-radius:5px;}
-.revolve-logo img {width:150px;height:auto;max-height:none;object-fit:contain;}
+.revolve-logo img {width:150px;height:auto;max-height:60px;object-fit:contain;}
 .revolve-contact {display:flex;align-items:center;gap:24px;}
 .revolve-contact a {color:#fff;}
 .revolve-contact a:hover {color:#ffb000;}
-img[src="/cargoxpress-logo.png"] {background:#06122b;padding:4px;border-radius:5px;}
+img[src="/corgoxpress-logo.jpeg"] {background:#06122b;padding:4px;border-radius:5px;}
 .revolve-nav nav {display:flex;align-items:center;gap:36px;font-size:15px;font-weight:500;}
 .revolve-nav a:hover {color:#4a3aff;}
 .revolve-nav .revolve-cta {background:#4a3aff;color:white;padding:14px 18px;border-radius:6px;display:flex;align-items:center;gap:24px;}

@@ -68,7 +68,7 @@ export default function CommunicationsPanel({ adminEmail }: { adminEmail: string
     setSending(true);
     setError("");
     const metadata = { visitorSession: selected.visitorSession, visitorName: selected.visitorName, status: selected.status, lastMessage: selected.lastMessage, updatedAt: selected.updatedAt, createdAt: selected.createdAt };
-    try { await sendChatMessage(selected.id, metadata, "admin", draft.trim(), "Cargo Xpress support"); setDraft(""); }
+    try { await sendChatMessage(selected.id, metadata, "admin", draft.trim(), "corgoXpress support"); setDraft(""); }
     catch { setError("Reply could not be sent. Check your connection and try again."); }
     finally { setSending(false); }
   }

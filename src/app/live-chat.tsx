@@ -89,10 +89,10 @@ export default function LiveChat({ embedded = false }: { embedded?: boolean }) {
   if (pathname.startsWith("/admin")) return null;
 
   return <div className="cx-chat" translate="no">
-    {open ? <section className="cx-chat-window" aria-label="Cargo Xpress live chat">
+    {open ? <section className="cx-chat-window" aria-label="corgoXpress live chat">
       <header className="cx-chat-header">
         <div className="cx-chat-avatar" aria-hidden="true">CX</div>
-        <div className="cx-chat-heading"><strong>Cargo Xpress support</strong><span><i className={online ? "is-online" : ""} />{online ? "Online now" : "We’ll reply as soon as we’re back"}</span></div>
+        <div className="cx-chat-heading"><strong>corgoXpress support</strong><span><i className={online ? "is-online" : ""} />{online ? "Online now" : "We’ll reply as soon as we’re back"}</span></div>
         <button type="button" className="cx-chat-close" aria-label="Close chat" onClick={() => toggleChat(false)}>×</button>
       </header>
       <div className="cx-chat-welcome"><span>SHIPMENT SUPPORT</span><h2>How can we help?</h2><p>Send us a message and our team will get back to you here.</p></div>

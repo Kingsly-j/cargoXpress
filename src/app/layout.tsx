@@ -6,20 +6,20 @@ import SiteShell from "./site-shell";
 import "./revolve.css";
 
 export const metadata: Metadata = {
-  title: "Cargo Xpress | Worldwide Shipping & Tracking",
-  description: "Worldwide air, sea and road freight with real-time tracking from Cargo Xpress.",
+  title: "corgoXpress | Worldwide Shipping & Tracking",
+  description: "Worldwide air, sea and road freight with real-time tracking from corgoXpress.",
   openGraph: {
     type: "website",
-    siteName: "Cargo Xpress",
-    title: "Cargo Xpress | Global Logistics & Tracking",
+    siteName: "corgoXpress",
+    title: "corgoXpress | Global Logistics & Tracking",
     description: "Reliable worldwide air, sea, and road freight with live shipment tracking.",
-    images: [{ url: "https://raw.githubusercontent.com/Kingsly-j/cargoXpress/main/public/cargoxpress-social.png", width: 1200, height: 630, alt: "Cargo Xpress global logistics — air, sea, and road shipping" }],
+    images: [{ url: "https://raw.githubusercontent.com/Kingsly-j/cargoXpress/main/public/corgoxpress-logo.jpeg", width: 1408, height: 768, alt: "corgoXpress global logistics — air, sea, and road shipping" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cargo Xpress | Global Logistics & Tracking",
+    title: "corgoXpress | Global Logistics & Tracking",
     description: "Reliable worldwide air, sea, and road freight with live shipment tracking.",
-    images: ["https://raw.githubusercontent.com/Kingsly-j/cargoXpress/main/public/cargoxpress-social.png"],
+    images: ["https://raw.githubusercontent.com/Kingsly-j/cargoXpress/main/public/corgoxpress-logo.jpeg"],
   },
 };
 

@@ -146,7 +146,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid #60a5fa; outline-offs
 .route-stop-list li { display:flex; align-items:center; gap:9px; font-size:13px; }
 .route-stop-list li > span { display:grid; place-items:center; width:25px; height:25px; border-radius:50%; color:white; }
 .route-stop-list small { display:block; color:#7c8795; text-transform:capitalize; }
-.tracking-parcel { display:grid; grid-template-columns:minmax(180px,1fr) minmax(0,3fr); gap:30px; padding:30px; }
+.tracking-photo-section { padding:16px; }
+.tracking-photo-section .tracking-photo { padding:0; background:#f2f3f5; }
+.tracking-photo-section .tracking-photo img { display:block; width:100%; max-height:440px; object-fit:cover; border-radius:10px; }
+.tracking-photo-section .tracking-photo > div { min-height:240px; }
+.tracking-parcel { display:grid; grid-template-columns:minmax(0,1fr); gap:30px; padding:30px; }
 .tracking-photo { padding:10px; border-radius:13px; background:#f2f3f5; align-self:start; }
 .tracking-photo img { width:100%; max-height:360px; object-fit:contain; border-radius:10px; }
 .tracking-photo > div { min-height:210px; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:18px; text-align:center; padding:15px; color:#8492a2; }
@@ -205,6 +209,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid #60a5fa; outline-offs
  .tracking-history li { padding-left:34px; }
  .tracking-parcel { grid-template-columns:1fr; padding:20px; gap:20px; }
  .tracking-photo { max-width:360px; width:100%; margin-inline:auto; }
+ .tracking-photo-section { padding:10px; }
+ .tracking-photo-section .tracking-photo { max-width:none; }
+ .tracking-photo-section .tracking-photo img { max-height:280px; object-fit:contain; }
  .tracking-parcel-grid { gap:12px; }
  .tracking-parcel-grid > div { padding:14px; }
  .tracking-parcel-grid dt { font-size:13px; gap:8px; }

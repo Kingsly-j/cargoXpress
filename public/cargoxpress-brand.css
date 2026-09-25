@@ -1,4 +1,4 @@
-img[src="/corgoxpress-logo.jpeg"] {
+img[src="/corgoxpress-logo.png"] {
   display: block;
   width: 180px;
   height: auto;
@@ -9,15 +9,15 @@ img[src="/corgoxpress-logo.jpeg"] {
   object-fit: contain;
 }
 
-.footer-widget__logo img[src="/corgoxpress-logo.jpeg"],
-.mobile-nav__content .logo-box img[src="/corgoxpress-logo.jpeg"],
-.xs-sidebar-group .content-inner .logo img[src="/corgoxpress-logo.jpeg"] {
+.footer-widget__logo img[src="/corgoxpress-logo.png"],
+.mobile-nav__content .logo-box img[src="/corgoxpress-logo.png"],
+.xs-sidebar-group .content-inner .logo img[src="/corgoxpress-logo.png"] {
   width: 150px;
 }
 
 @media (max-width: 760px) {
-  img[src="/corgoxpress-logo.jpeg"] { width: 142px; }
-  .footer-widget__logo img[src="/corgoxpress-logo.jpeg"],
-  .mobile-nav__content .logo-box img[src="/corgoxpress-logo.jpeg"],
-  .xs-sidebar-group .content-inner .logo img[src="/corgoxpress-logo.jpeg"] { width: 126px; }
+  img[src="/corgoxpress-logo.png"] { width: 142px; }
+  .footer-widget__logo img[src="/corgoxpress-logo.png"],
+  .mobile-nav__content .logo-box img[src="/corgoxpress-logo.png"],
+  .xs-sidebar-group .content-inner .logo img[src="/corgoxpress-logo.png"] { width: 126px; }
 }

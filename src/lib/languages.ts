@@ -38,7 +38,7 @@ export function translate(text:string,language:Language):string {
       const labels:Record<string,string[]>={"History event":["Ereignis","Evento","事件"],"Route stop":["Zwischenstopp","Parada","停靠点"],"Remove event":["Ereignis entfernen","Remover evento","删除事件"],"Remove stop":["Stopp entfernen","Remover parada","删除停靠点"],"Shipment history":["Sendungsverlauf","Histórico do envio","货件历史"],"Complete shipment route":["Vollständige Versandroute","Rota completa","完整路线"]};
       return labels[numbered[1]][internationalIndex]+' '+numbered[2];
     }
-    if(key.endsWith(' date'))return translate(key.slice(0,-5),language)+' '+['(Datum)','(data)','(日期)'][internationalIndex];
+    if(key.endsWith(' date'))return translate(key.slice(0,-5),language)+' '+['(Datum)','(data)','(�-�期)'][internationalIndex];
     return text;
   }
   const numbered=key.match(/^(History event|Route stop|Remove event|Remove stop|Shipment history|Complete shipment route) (.+)$/);

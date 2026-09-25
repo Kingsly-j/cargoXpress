@@ -3,7 +3,7 @@ import path from 'node:path';
 import { randomBytes, createHash } from 'node:crypto';
 
 const source = path.resolve('../jmlogisticts');
-const adapt = text => text.replaceAll('Bluecrest Logistics','Revolve Courier').replaceAll('Bluecrest','Revolve').replaceAll('bluecrest-logistics','cargoxpress-logistics').replaceAll('bluecrest-verification','cargoxpress-verification').replaceAll('support@bluecrestshipping.com','cargoxpress83@gmail.com').replaceAll('contact@iwebbtech.com','cargoxpress83@gmail.com').replaceAll('19152019157','17064521895').replaceAll('+1 (915) 201-9157','+1 (706) 452-1895').replaceAll('BC-','CX-');
+const adapt = text => text.replaceAll('Bluecrest Logistics','Revolve Courier').replaceAll('Bluecrest','Revolve').replaceAll('bluecrest-logistics','cargoxpress-logistics').replaceAll('bluecrest-verification','cargoxpress-verification').replaceAll('support@bluecrestshipping.com','corgoxpress@gmail.com').replaceAll('contact@iwebbtech.com','corgoxpress@gmail.com').replaceAll('19152019157','17064521895').replaceAll('+1 (915) 201-9157','+1 (706) 452-1895').replaceAll('BC-','CX-');
 const modules = ['app/admin/page.tsx','app/admin/shipment-details-editor.tsx','app/admin/shipment-note-editor.tsx','app/track/page.tsx','app/track/shipment-result.tsx','app/track/shipment-route.tsx','app/trackingresult/page.tsx','app/admin-access.tsx','app/language-provider.tsx','app/floating-tools.tsx','lib/shipments.ts','lib/shipment-route.ts','lib/shipment-progress.ts','lib/whatsapp.ts','lib/languages.ts','lib/italian-translations.ts','lib/international-translations.ts','utils/firebase/client.ts','utils/supabase/client.ts'];
 for (const file of modules) {
   const target = path.join('src',file);
@@ -31,7 +31,7 @@ NEXT_PUBLIC_SUPABASE_URL:sourceEnv.NEXT_PUBLIC_SUPABASE_URL,
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:sourceEnv.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
 NEXT_PUBLIC_SUPABASE_SHIPMENT_PHOTOS_BUCKET:sourceEnv.NEXT_PUBLIC_SUPABASE_SHIPMENT_PHOTOS_BUCKET || 'blue',
 S3_BUCKET_NAME:sourceEnv.S3_BUCKET_NAME || 'blue',
-SHIPWAVE_SUPER_ADMIN_EMAIL:'cargoxpress83@gmail.com',
+SHIPWAVE_SUPER_ADMIN_EMAIL:'corgoxpress@gmail.com',
 SHIPWAVE_SUPER_ADMIN_PASSWORD:password,
 };
 for(const key of ['NEXT_PUBLIC_SUPABASE_URL','NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY']) if(!config[key]) throw Error('Source configuration missing '+key);

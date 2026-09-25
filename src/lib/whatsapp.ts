@@ -13,7 +13,7 @@ export function shipmentPaymentLink(shipment: Shipment, feeName: string, formatt
 
 export function shipmentPaymentEmailLink(shipment: Shipment, feeName: string, formattedAmount: string) {
   const subject = `Payment for ${feeName} - ${shipment.trackingCode}`;
-  return `mailto:cargoxpress83@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(shipmentPaymentMessage(shipment, feeName, formattedAmount))}`;
+  return `mailto:corgoxpress@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(shipmentPaymentMessage(shipment, feeName, formattedAmount))}`;
 }
 
 function shipmentPaymentMessage(shipment: Shipment, feeName: string, formattedAmount: string) {

@@ -93,7 +93,7 @@ export default function LiveChat({ embedded = false }: { embedded?: boolean }) {
       <header className="cx-chat-header">
         <div className="cx-chat-avatar" aria-hidden="true">CX</div>
         <div className="cx-chat-heading"><strong>corgoXpress support</strong><span><i className={online ? "is-online" : ""} />{online ? "Online now" : "We’ll reply as soon as we’re back"}</span></div>
-        <button type="button" className="cx-chat-close" aria-label="Close chat" onClick={() => toggleChat(false)}>×</button>
+        <button type="button" className="cx-chat-close" aria-label="Close chat" onClick={() => toggleChat(false)}>�-</button>
       </header>
       <div className="cx-chat-welcome"><span>SHIPMENT SUPPORT</span><h2>How can we help?</h2><p>Send us a message and our team will get back to you here.</p></div>
       <div className="cx-chat-messages" aria-live="polite">
@@ -108,7 +108,7 @@ export default function LiveChat({ embedded = false }: { embedded?: boolean }) {
       </form>
     </section> : null}
     <button type="button" className="cx-chat-launcher" aria-expanded={open} onClick={() => toggleChat(!open)} aria-label={open ? "Close live chat" : "Open live chat"}>
-      {open ? <span className="cx-chat-launcher-close">×</span> : <><span className="cx-chat-launcher-icon" aria-hidden="true">▰</span><span>Chat with us</span></>}
+      {open ? <span className="cx-chat-launcher-close">�-</span> : <><span className="cx-chat-launcher-icon" aria-hidden="true">▰</span><span>Chat with us</span></>}
     </button>
   </div>;
 }

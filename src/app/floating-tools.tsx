@@ -54,7 +54,7 @@ export default function FloatingTools() {
                 toggle.current?.focus();
               }}
             >
-              ×
+              �-
             </button>
           </div>
           {(Object.keys(languageNames) as Language[]).map((value) => (

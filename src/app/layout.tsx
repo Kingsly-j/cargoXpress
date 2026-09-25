@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     siteName: "corgoXpress",
     title: "corgoXpress | Global Logistics & Tracking",
     description: "Reliable worldwide air, sea, and road freight with live shipment tracking.",
-    images: [{ url: "https://raw.githubusercontent.com/Kingsly-j/cargoXpress/main/public/corgoxpress-logo.jpeg", width: 1408, height: 768, alt: "corgoXpress global logistics — air, sea, and road shipping" }],
+    images: [{ url: "https://raw.githubusercontent.com/Kingsly-j/cargoXpress/main/public/corgoxpress-logo.png", width: 1774, height: 887, alt: "corgoXpress global logistics — air, sea, and road shipping" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "corgoXpress | Global Logistics & Tracking",
     description: "Reliable worldwide air, sea, and road freight with live shipment tracking.",
-    images: ["https://raw.githubusercontent.com/Kingsly-j/cargoXpress/main/public/corgoxpress-logo.jpeg"],
+    images: ["https://raw.githubusercontent.com/Kingsly-j/cargoXpress/main/public/corgoxpress-logo.png"],
   },
 };
 
